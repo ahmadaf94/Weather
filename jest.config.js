@@ -1,4 +1,6 @@
+/** @type {import('@jest/types').Config.InitialOptions} */
 module.exports = {
-    "preset": "react-native",
-    "setupFilesAfterEnv": ["./jest-setup-after-env.js"]
+  preset: 'react-native',
+  setupFilesAfterEnv: ['./jest-setup-after-env.js'],
+  modulePathIgnorePatterns: ['e2e'],
 };
