@@ -1,11 +1,15 @@
 import React from 'react';
-import {SafeAreaView, ScrollView} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import ReactQuery from './components/ReactQuery.tsx';
+import WeatherScreen from './screens/WeatherScreen.tsx';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView>
-      <ScrollView contentInsetAdjustmentBehavior="automatic" />
-    </SafeAreaView>
+    <ReactQuery>
+      <SafeAreaView>
+        <WeatherScreen />
+      </SafeAreaView>
+    </ReactQuery>
   );
 }
 
